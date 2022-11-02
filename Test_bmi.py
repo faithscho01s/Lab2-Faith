@@ -7,6 +7,7 @@ def test_bmi_under_weight():
     assert (result == value)
 
 
+
 def test_bmi_normal_weight():
     value = 0
     result = bmi.calculate_bmi(1.73,57)
