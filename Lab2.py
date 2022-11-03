@@ -28,14 +28,15 @@ def calc_average(num_list):
 
 def find_min_max(num_list):
     print("find_min_max")
+
     min = num_list[0]
     for number in num_list:
-        if number > min:
+        if number < min:
             min = number
 
     max = num_list[0]
     for number in num_list:
-        if number < max:
+        if number > max:
             max = number
     return min, max
 
