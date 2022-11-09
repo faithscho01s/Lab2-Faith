@@ -17,4 +17,18 @@ def test_calc_average():
     assert (average == test_average)
 
 
-##def test_calc_median_temperature():
+def test_calc_median_temperature_even():
+    result = []
+    user_input = [34, 56, 78, 90]
+    test_median = 64.5
+    median = Lab2.calc_median_temperature(user_input)
+
+    assert (median == test_median)
+
+def test_calc_median_temperature_odd():
+    result = []
+    user_input = [34, 56, 78]
+    test_median = 56
+    median = Lab2.calc_median_temperature(user_input)
+
+    assert (median == test_median)

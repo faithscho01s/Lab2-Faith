@@ -25,7 +25,7 @@ def get_user_input():
 
 def calc_average(num_list):
     print("calc_average")
-    num_list = list(map(int, num_list))
+    num_list = list(map(float, num_list))
     average = sum(num_list) / len(num_list)
     return average
 
@@ -62,8 +62,8 @@ def calc_median_temperature(new_list):
         #even
         find_index_even = n / 2
         even = math.ceil(find_index_even)
-        middle1 = int(new_list[even])
-        middle2 = int(new_list[even - 1])
+        middle1 = float(new_list[even])
+        middle2 = float(new_list[even - 1])
         median = (middle1 + middle2) / 2
 
     return median
